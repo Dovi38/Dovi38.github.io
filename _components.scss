@@ -1,0 +1,42 @@
+#logo {
+  font-size: 45px;
+  font-weight: bold;
+  p {
+    display: inline-block;
+    font-family: $font-logo;
+    color: rgb(149, 100, 100);
+    padding: 0 30px;
+  }
+}
+  .box-title {
+    width: 800px;
+    background-color: rgba(151, 149, 153, 0.5);
+    border: 2px solid blue;
+
+    .title {
+      border: 2px solid yellow;
+      text-align: center;
+      p {
+      color: white;
+      font-size: 3.125em;
+      padding: 10px 0;
+      } 
+  }  
+  .link {
+    margin: 20px 0;
+    text-align: center;
+    .btn-link {
+      width: 10em;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px 10px;
+      background-color: rgba(149, 100, 100, 0.8);
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+
