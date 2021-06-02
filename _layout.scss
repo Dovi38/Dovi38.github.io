@@ -50,10 +50,18 @@ header {
         flex-direction: column;
         align-items: center;
         align-content: center;
-        /*width: 100%;*/
-        overflow: hidden;
+        width: 100%;
+        
       
       }
     }
     
+  }
+  .container-about {
+border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
   }
