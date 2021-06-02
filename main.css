@@ -55,10 +55,17 @@ header .navbar a:hover {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    /*width: 100%;*/
-    overflow: hidden;
+    width: 100%;
   }
 }
+.container-about {
+  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #logo {
   font-size: 45px;
   font-weight: bold;
@@ -116,4 +123,12 @@ header .navbar a:hover {
     padding: 0;
     white-space: nowrap;
   }
+}
+.about-img {
+  height: auto;
+  width: 400px;
+}
+
+.text-box {
+  border: 2px solid green;
 }
