@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik+Beastly&family=Signika+Negative:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Merriweather sans", "Roboto", serif;
+  font-family: "PT Serif", serif;
 }
 
 header {
@@ -31,6 +32,8 @@ header .navbar a {
   text-decoration: none;
   color: #000;
   padding: 0 30px;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 header .navbar a:hover {
   background-color: #928644;
@@ -38,7 +41,7 @@ header .navbar a:hover {
 }
 
 .box-landing {
-  background-image: url(./images/laptop-dark.jpg);
+  background-image: url(./images/IMG_1775.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,18 +49,19 @@ header .navbar a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: landing-top 5s ease-out both;
 }
 
 .box-about-flex {
-  /*border: 2px solid brown;*/
+  border: 2px solid brown;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 30px;
 }
 .box-about-flex .box-img {
   /* width: 40%;*/
-  /*border: 2px solid purple;*/
   /*flex: 0 0 40%;*/
   flex: 30%;
 }
@@ -67,6 +71,7 @@ header .navbar a:hover {
   line-height: 1.8;
   /*flex: 0.8 0 auto;*/
   flex: 50%;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .grid-container-skills {
@@ -118,7 +123,6 @@ header .navbar a:hover {
   height: 10vh;
   margin-top: 40px;
   background-color: #babbb4;
-  /*hsla(284, 7%, 40%, 0.589);*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,10 +164,9 @@ header .navbar a:hover {
     flex-direction: column;
   }
 }
-/*header container mobile vertion*/
+/*header container tablet version*/
 @media screen and (max-width: 991px) {
   header {
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     height: auto;
@@ -176,21 +179,34 @@ header .navbar a:hover {
   }
 }
 #logo {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 #logo .sign {
   display: inline-block;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.788);
+  border-radius: 30px;
   font-family: "Fredericka the Great", cursive;
   color: #9a8f62;
   /*rgb(149, 100, 100);*/
   padding: 0 30px;
+  margin-left: 2rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 10px rgba(187, 172, 107, 0.849);
 }
 
+@media screen and (max-width: 991px) {
+  #logo {
+    font-size: 1.5rem;
+  }
+}
 .box-title {
-  width: 800px;
-  background-color: rgba(151, 149, 153, 0.5);
+  width: 50rem;
+  padding: 20px;
+  background-color: rgba(90, 90, 89, 0.6);
   /*border: 2px solid blue;*/
+  box-shadow: inset 5px 5px 10px rgba(187, 172, 107, 0.849), inset 5px 5px 10px #000000, inset 5px 5px 10px #000000, inset -5px -5px 10px rgba(5, 5, 5, 0.918);
 }
 .box-title .title {
   /*border: 2px solid yellow;*/
@@ -200,6 +216,8 @@ header .navbar a:hover {
   color: white;
   font-size: 3em;
   padding: 10px 0;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 2px 2px 4px #000000;
 }
 .box-title .link {
   margin-bottom: 20px;
@@ -215,12 +233,20 @@ header .navbar a:hover {
   padding: 5px 10px;
   background-color: #CABE92;
   /*rgba(149, 100, 100, 0.8);*/
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 991px) {
+  .box-title {
+    font-size: 0.7rem;
+    width: auto;
+  }
+}
 #about {
-  /*border: 2px solid green;*/
+  border: 2px solid green;
 }
 #about h2 {
   display: inline-block;
@@ -229,11 +255,14 @@ header .navbar a:hover {
   margin-left: 30px;
   font-size: 30px;
   text-transform: uppercase;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .text-header {
   color: rgba(229, 139, 144, 0.8);
   font-size: 30px;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .text-subheader {
@@ -255,8 +284,10 @@ header .navbar a:hover {
   padding: 5px 10px;
   margin: 40px 30px 0px 30px;
   background-color: rgba(229, 139, 144, 0.5);
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
 }
 
 #skills {
@@ -270,6 +301,8 @@ header .navbar a:hover {
   padding: 40px 100px 10px 30px;
   font-size: 30px;
   text-transform: uppercase;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .item i {
@@ -292,6 +325,8 @@ header .navbar a:hover {
   padding: 40px 100px 10px 30px;
   font-size: 30px;
   text-transform: uppercase;
+  font-family: "Fredericka the Great", cursive;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .top-container {
@@ -302,6 +337,7 @@ header .navbar a:hover {
 .top-container h3 {
   font-size: 30px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .form {
@@ -316,10 +352,12 @@ header .navbar a:hover {
   font-size: 20px;
   font-weight: bold;
   padding: 5px 20px;
-  border: 4px solid grey;
+  border: 1px solid grey;
   border-radius: 15px;
   background-color: #CABE92;
   /*rgba(149, 100, 100, 0.8);*/
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
 }
 
 input[type=text] {
@@ -361,5 +399,5 @@ input {
 
 .end__right img {
   width: 40px;
-  margin: 10px 20px;
+  margin: 10px 10px;
 }
