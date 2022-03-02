@@ -1,30 +1,57 @@
 #logo {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
+
   .sign {
     display: inline-block;
+    text-decoration: none;
+    //border: 2px solid black;
+
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 30px;
     font-family: $font-logo;
-    color: #9a8f62; /*rgb(149, 100, 100);*/
+    color: #9a8f62;
+    /*rgb(149, 100, 100);*/
     padding: 0 30px;
+    margin-left: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(187, 172, 107, 0.849);
   }
 }
-  .box-title {
-    width: 800px;
-    background-color: rgba(151, 149, 153, 0.5);
-    /*border: 2px solid blue;*/
 
-    .title {
-      /*border: 2px solid yellow;*/
-      text-align: center;
-      p {
+@media screen and (max-width: 991px) {
+  #logo {
+    font-size: 1.5rem;
+  }
+}
+
+.box-title {
+  width: 50rem;
+  padding: 20px;
+  background-color: rgba(90, 90, 89, 0.6);
+  /*border: 2px solid blue;*/
+  box-shadow: inset 5px 5px 10px rgba(187, 172, 107, 0.849),
+    inset 5px 5px 10px #000000,
+    inset 5px 5px 10px #000000,
+    inset -5px -5px 10px rgba(5, 5, 5, 0.918);
+
+  .title {
+    /*border: 2px solid yellow;*/
+    text-align: center;
+
+    p {
       color: white;
       font-size: 3em;
       padding: 10px 0;
-      } 
-  }  
+      font-family: $font-logo;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  }
+
   .link {
     margin-bottom: 20px;
     text-align: center;
+
     /*border:2px solid red;*/
     .btn-link1 {
       width: 10em;
@@ -33,15 +60,28 @@
       color: black;
       text-decoration: none;
       padding: 5px 10px;
-      background-color: #CABE92; /*rgba(149, 100, 100, 0.8);*/
-      border: 2px solid black;
+      background-color: #CABE92;
+      /*rgba(149, 100, 100, 0.8);*/
+      border: 1px solid black;
       border-radius: 10px;
+      box-shadow: inset 0 0 10px #000000;
+      cursor: pointer;
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .box-title {
+    font-size: 0.7rem;
+    width: auto;
+
+  }
+}
+
 //second section about me
 #about {
-  /*border: 2px solid green;*/
+  border: 2px solid green;
+
   h2 {
     display: inline-block;
     border-bottom: 3px solid grey;
@@ -49,22 +89,31 @@
     margin-left: 30px;
     font-size: 30px;
     text-transform: uppercase;
-    
+    font-family: $font-logo;
+    text-shadow: 2px 2px 4px #d1cfcf;
+
   }
 }
+
 .text-header {
-  color:rgba(229, 139, 144, 0.8);
+  color: rgba(229, 139, 144, 0.8);
   font-size: 30px;
+
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
+
 .text-subheader {
   font-size: 25px;
+
 }
 
 #profile-img {
   width: 100%;
   height: auto;
   padding: 20px;
+
 }
+
 .btn-link {
   width: 10em;
   font-size: 20px;
@@ -74,12 +123,16 @@
   padding: 5px 10px;
   margin: 40px 30px 0px 30px;
   background-color: rgba(229, 139, 144, 0.5);
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
+  box-shadow: inset 0 0 10px #000000;
+  cursor: pointer;
 }
+
 #skills {
   /*border: 2px solid red;*/
   background-color: rgba(216, 213, 213, 0.24);
+
   h2 {
     display: inline-block;
     border-bottom: 3px solid grey;
@@ -87,23 +140,29 @@
     padding: 40px 100px 10px 30px;
     font-size: 30px;
     text-transform: uppercase;
+    font-family: $font-logo;
+    text-shadow: 2px 2px 4px #d1cfcf;
   }
 }
+
 .item {
-  
+
   i {
     /*border: 2px solid green;*/
     font-size: 3em;
-    color: #CABE92;;
+    color: #CABE92;
+    ;
     margin: 20px 0;
   }
+
   span {
     font-size: 2em;
-    color:rgba(190, 133, 190, 0.8);
+    color: rgba(190, 133, 190, 0.8);
     font-weight: 800;
     padding-left: 5px;
   }
 }
+
 #projects {
   h2 {
     display: inline-block;
@@ -112,48 +171,62 @@
     padding: 40px 100px 10px 30px;
     font-size: 30px;
     text-transform: uppercase;
+    font-family: $font-logo;
+    text-shadow: 2px 2px 4px #d1cfcf;
   }
 }
+
 //contact section form
 .top-container {
   align-self: flex-start;
   /*border: 2px solid green;*/
   padding: 10px 20px;
+
   h3 {
     font-size: 30px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px #d1cfcf;
   }
 }
+
 .form {
   background-color: hsla(165, 7%, 89%, 0.5);
   padding: 20px;
+
   &__box {
     /*border:2px solid orange;*/
     flex: 0 1 70%;
   }
+
   &__box__button {
     font-size: 20px;
     font-weight: bold;
     padding: 5px 20px;
-    border: 4px solid grey;
+    border: 1px solid grey;
     border-radius: 15px;
-    background-color: #CABE92;  /*rgba(149, 100, 100, 0.8);*/
+    background-color: #CABE92;
+    /*rgba(149, 100, 100, 0.8);*/
+    box-shadow: inset 0 0 10px #000000;
+    cursor: pointer;
   }
 }
+
 input[type=text] {
   width: 70%;
   padding: 5px;
   margin: 10px 0;
   border-radius: 5px;
-  display: block;  
+  display: block;
 }
+
 input[type=email] {
   width: 70%;
   padding: 5px;
   margin: 10px 0;
   border-radius: 5px;
-  display: block; 
+  display: block;
 }
+
 textarea {
   width: 100%;
   display: block;
@@ -163,8 +236,9 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   margin: 5px 0;
- 
+
 }
+
 /*label {
   border: 2px solid red;
 }
@@ -175,14 +249,9 @@ input {
 .end__left {
   margin-left: 20px;
 }
+
 .end__right img {
   width: 40px;
-  margin: 10px 20px;
-  
+  margin: 10px 10px;
+
 }
-
-
-
-
-
-

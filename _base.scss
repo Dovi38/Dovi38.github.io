@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik+Beastly&family=Signika+Negative:wght@300&display=swap');
 
-$font-logo: "Fredericka the Great", cursive;
-$font-main: "Merriweather sans", "Roboto", serif;
+$font-logo: "Fredericka the Great",
+cursive;
+$font-main: 'PT Serif',
+serif;
+
+
 
 * {
   margin: 0;
