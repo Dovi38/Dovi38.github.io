@@ -82,6 +82,7 @@
 #about {
   border: 2px solid green;
 
+
   h2 {
     display: inline-block;
     border-bottom: 3px solid grey;
@@ -91,20 +92,18 @@
     text-transform: uppercase;
     font-family: $font-logo;
     text-shadow: 2px 2px 4px #d1cfcf;
-
+    margin-top: 50px;
   }
 }
 
 .text-header {
   color: rgba(229, 139, 144, 0.8);
   font-size: 30px;
-
   text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .text-subheader {
   font-size: 25px;
-
 }
 
 #profile-img {
@@ -142,6 +141,7 @@
     text-transform: uppercase;
     font-family: $font-logo;
     text-shadow: 2px 2px 4px #d1cfcf;
+    margin-top: 50px;
   }
 }
 
@@ -173,6 +173,7 @@
     text-transform: uppercase;
     font-family: $font-logo;
     text-shadow: 2px 2px 4px #d1cfcf;
+    margin-top: 50px;
   }
 }
 
@@ -181,11 +182,13 @@
   align-self: flex-start;
   /*border: 2px solid green;*/
   padding: 10px 20px;
+  margin-top: 50px;
 
   h3 {
     font-size: 30px;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px #d1cfcf;
+
   }
 }
 
@@ -252,6 +255,5 @@ input {
 
 .end__right img {
   width: 40px;
-  margin: 10px 10px;
-
+  margin-right: 40px;
 }
