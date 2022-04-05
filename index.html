@@ -8,7 +8,7 @@
   <title>Portfolio web development</title>
   <!--Font awesome link-->
   <script src="https://kit.fontawesome.com/60666d190a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./sass/main.scss">
+  <link rel="stylesheet" href="./sass/main.css">
 
 </head>
 
@@ -16,7 +16,7 @@
   <!--Header-->
   <header>
     <div id="logo">
-      <a class="sign" href="#main">D<strong>///</strong>L</a>
+      <a class="sign" href="#main">D<span class="sign-adds">///</span>L</a>
     </div>
     <nav class="navbar">
       <a href="#about">About</a>
@@ -29,10 +29,12 @@
   <main id="main">
     <!--landing page-->
     <section class="box-landing">
+
       <div class="box-title">
         <div class="title">
-          <p>Hi, I'm Dovi</p>
-          <p>Web Developer</p>
+          <p class="title-greeting">Hello!</p>
+          <p>I'm <span class="title-name">Dovile</span></p>
+          <p><span class="title-role">Web</span> Developer</p>
         </div>
         <div class="link">
           <a href="#about"><button class="btn-link1">Find Out More</button></a>
@@ -110,12 +112,14 @@
       </div>
 
       <div class="grid-container-projects">
-        <div class="grid-item">
-          <h4>project1</h4>
+        <div class="card">
+          <div class="grid-item project1"></div>
+          <div class="grid-item back">card back</div>
         </div>
         <div class="grid-item">project2</div>
         <div class="grid-item">project3</div>
         <div class="grid-item">project4</div>
+
       </div>
 
       <!--section contact form-->

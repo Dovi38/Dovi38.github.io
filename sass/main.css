@@ -106,11 +106,15 @@ header .navbar a:hover {
   padding: 10px;
   margin-top: 30px;
 }
+.grid-container-projects .card {
+  display: block;
+}
 .grid-container-projects .grid-item {
   height: 15em;
   text-align: center;
   background-color: white;
   border: 2px solid #535252;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 #contact {
@@ -195,11 +199,14 @@ header .navbar a:hover {
   border-radius: 30px;
   font-family: "Fredericka the Great", cursive;
   color: #9a8f62;
-  /*rgb(149, 100, 100);*/
   padding: 0 30px;
   margin-left: 2rem;
   cursor: pointer;
   box-shadow: inset 0 0 10px rgba(187, 172, 107, 0.849);
+}
+#logo .sign-adds {
+  color: #efce7a;
+  font-family: "Fredericka the Great", cursive;
 }
 
 @media screen and (max-width: 991px) {
@@ -211,12 +218,23 @@ header .navbar a:hover {
   width: 50rem;
   padding: 20px;
   background-color: rgba(90, 90, 89, 0.6);
-  /*border: 2px solid blue;*/
-  box-shadow: inset 5px 5px 10px rgba(187, 172, 107, 0.849), inset 5px 5px 10px #000000, inset 5px 5px 10px #000000, inset -5px -5px 10px rgba(5, 5, 5, 0.918);
+  box-shadow: inset 5px 5px 10px rgba(187, 172, 107, 0.849), inset 5px 5px 10px #000000, inset 5px 5px 10px #000000, inset -5px -5px 10px rgba(220, 215, 215, 0.918);
 }
 .box-title .title {
-  /*border: 2px solid yellow;*/
   text-align: center;
+}
+.box-title .title .title-greeting {
+  font-size: 3.1em;
+  text-align: left;
+  margin-left: 50px;
+}
+.box-title .title .title-name {
+  color: #CABE92;
+  font-weight: 900;
+}
+.box-title .title .title-role {
+  color: #CABE92;
+  font-weight: 900;
 }
 .box-title .title p {
   color: white;
@@ -227,6 +245,7 @@ header .navbar a:hover {
 }
 .box-title .link {
   margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
   /*border:2px solid red;*/
 }
@@ -238,7 +257,6 @@ header .navbar a:hover {
   text-decoration: none;
   padding: 5px 10px;
   background-color: #CABE92;
-  /*rgba(149, 100, 100, 0.8);*/
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: inset 0 0 10px #000000;
@@ -316,12 +334,12 @@ header .navbar a:hover {
 .item i {
   /*border: 2px solid green;*/
   font-size: 3em;
-  color: #CABE92;
+  color: #cabe92;
   margin: 20px 0;
 }
 .item span {
   font-size: 2em;
-  color: rgba(190, 133, 190, 0.8);
+  color: #cabe92;
   font-weight: 800;
   padding-left: 5px;
 }
@@ -336,6 +354,14 @@ header .navbar a:hover {
   font-family: "Fredericka the Great", cursive;
   text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
+}
+#projects .project1 {
+  background: url("../images/beer1.png");
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .top-container {
