@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 
   .navbar {
     display: flex;
@@ -52,7 +53,7 @@ header {
 
 //about me section
 .box-about-flex {
-  border: 2px solid brown;
+  //border: 2px solid brown;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -66,10 +67,13 @@ header {
     /*flex: 0 0 40%;*/
     flex: 30%;
 
+    .box-img-size {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   .box-text {
-    /*border: 2px solid green;*/
     padding: 30px;
     line-height: 1.8;
     /*flex: 0.8 0 auto;*/
@@ -101,7 +105,6 @@ header {
 
 //Projects
 .grid-container-projects {
-  /*border: 2px solid red;*/
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 30%);
@@ -111,23 +114,6 @@ header {
   gap: 20px;
   padding: 10px;
   margin-top: 30px;
-
-  //perspective: 1000px;
-  .card {
-    display: block;
-  }
-
-  .grid-item {
-
-    height: 15em;
-    text-align: center;
-    background-color: white;
-    border: 2px solid rgb(83, 82, 82);
-    box-shadow: 5px 10px 8px #888888;
-    // transition: 1s all ease-in-out;
-    // transform-style: preserve-3d;
-    // grid-template-areas: "overlap"
-  }
 }
 
 //contact form
