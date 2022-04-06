@@ -11,9 +11,6 @@ header {
   height: 10vh;
   width: 100%;
   background-color: #babbb4;
-  /*rgb(162, 156, 163);*/
-  /*border: 2px solid red;*/
-  /*position: fixed;*/
   position: sticky;
   top: 0;
   display: flex;
@@ -27,7 +24,6 @@ header .navbar {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
-  /*border: 2px solid green;*/
 }
 header .navbar a {
   text-decoration: none;
@@ -42,7 +38,7 @@ header .navbar a:hover {
 }
 
 .box-landing {
-  background-image: url(../images/IMG_1775.JPG);
+  background-image: url(../images/IMG_1775-min.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

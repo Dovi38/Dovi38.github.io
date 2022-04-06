@@ -2,9 +2,6 @@ header {
   height: 10vh;
   width: 100%;
   background-color: #babbb4;
-  /*rgb(162, 156, 163);*/
-  /*border: 2px solid red;*/
-  /*position: fixed;*/
   position: sticky;
   top: 0;
   display: flex;
@@ -19,7 +16,6 @@ header {
     font-weight: bold;
     text-transform: uppercase;
 
-    /*border: 2px solid green;*/
     a {
       text-decoration: none;
       color: #000;
@@ -37,7 +33,7 @@ header {
 
 //Landing page
 .box-landing {
-  background-image: url(../images/IMG_1775.JPG);
+  background-image: url(../images/IMG_1775-min.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
