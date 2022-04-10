@@ -6,18 +6,15 @@
     display: inline-block;
     text-decoration: none;
     font-family: $font-logo;
-    //color: #000;
     color: #d1cfcf;
     padding: 0 30px;
     margin-left: 2rem;
     cursor: pointer;
-    //text-shadow: 2px 2px 4px #d1cfcf;
   }
 
   .sign-slashes {
     color: #d1cfcf;
     font-family: $font-logo;
-    text-shadow: 2px 2px 4px #d1cfcf;
   }
 }
 
@@ -152,7 +149,6 @@
     font-size: 30px;
     text-transform: uppercase;
     font-family: $font-logo;
-    text-shadow: 2px 2px 4px #d1cfcf;
     margin-top: 50px;
   }
 }
@@ -164,7 +160,7 @@
 
   i {
     font-size: 3em;
-    color: rgb(202, 190, 146);
+    color: #ba9b4a;
     margin: 20px 0;
   }
 
@@ -174,7 +170,7 @@
 
   span {
     font-size: 2em;
-    color: rgba(202, 190, 146);
+    color: #ba9b4a;
     font-weight: 800;
     padding-left: 5px;
   }
@@ -189,7 +185,6 @@
     font-size: 30px;
     text-transform: uppercase;
     font-family: $font-logo;
-    text-shadow: 2px 2px 4px #d1cfcf;
     margin-top: 50px;
   }
 
@@ -228,12 +223,13 @@
         position: absolute;
         transform: rotateY(180deg);
         backface-visibility: hidden;
-        background-color: #9e946c;
+        background: linear-gradient(#f3b61f, #191923);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        color: #fff;
 
         .card-back-icon {
           width: 60%;
@@ -243,6 +239,7 @@
 
           .fa-icon {
             color: #000000;
+
           }
         }
       }
@@ -279,7 +276,7 @@
   h3 {
     font-size: 30px;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px #d1cfcf;
+    font-family: $font-logo;
   }
 }
 
@@ -294,11 +291,11 @@
   &__box__button {
     font-size: 20px;
     font-weight: bold;
+    font-family: $font-logo;
     padding: 5px 20px;
     border: 1px solid grey;
-    border-radius: 15px;
-    background-color: #CABE92;
-    /*rgba(149, 100, 100, 0.8);*/
+    border-radius: 10px;
+    background-color: #f3b61f;
     box-shadow: inset 0 0 10px #000000;
     cursor: pointer;
   }

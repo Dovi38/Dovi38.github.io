@@ -216,7 +216,6 @@ header .toggle-menu .bar {
 #logo .sign-slashes {
   color: #d1cfcf;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 @media screen and (max-width: 991px) {
@@ -332,7 +331,6 @@ header .toggle-menu .bar {
   font-size: 30px;
   text-transform: uppercase;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
 
@@ -343,7 +341,7 @@ header .toggle-menu .bar {
 }
 .item i {
   font-size: 3em;
-  color: #cabe92;
+  color: #ba9b4a;
   margin: 20px 0;
 }
 .item .testing {
@@ -351,7 +349,7 @@ header .toggle-menu .bar {
 }
 .item span {
   font-size: 2em;
-  color: #cabe92;
+  color: #ba9b4a;
   font-weight: 800;
   padding-left: 5px;
 }
@@ -364,7 +362,6 @@ header .toggle-menu .bar {
   font-size: 30px;
   text-transform: uppercase;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
 #projects .card-container {
@@ -400,12 +397,13 @@ header .toggle-menu .bar {
   position: absolute;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  background-color: #9e946c;
+  background: linear-gradient(#f3b61f, #191923);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  color: #fff;
 }
 #projects .card-container .card .card-back .card-back-icon {
   width: 60%;
@@ -440,7 +438,7 @@ header .toggle-menu .bar {
 .top-container h3 {
   font-size: 30px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px #d1cfcf;
+  font-family: "Libre Baskerville", serif;
 }
 
 .form {
@@ -453,11 +451,11 @@ header .toggle-menu .bar {
 .form__box__button {
   font-size: 20px;
   font-weight: bold;
+  font-family: "Libre Baskerville", serif;
   padding: 5px 20px;
   border: 1px solid grey;
-  border-radius: 15px;
-  background-color: #CABE92;
-  /*rgba(149, 100, 100, 0.8);*/
+  border-radius: 10px;
+  background-color: #f3b61f;
   box-shadow: inset 0 0 10px #000000;
   cursor: pointer;
 }
