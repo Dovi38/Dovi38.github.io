@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik+Beastly&family=Signika+Negative:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PT Serif", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   height: 10vh;
   width: 100%;
-  background-color: #babbb4;
+  background-color: #191923;
   position: sticky;
   top: 0;
   display: flex;
@@ -27,14 +26,31 @@ header .navbar {
 }
 header .navbar a {
   text-decoration: none;
-  color: #000;
+  color: #d1cfcf;
   padding: 0 30px;
-  font-family: "Fredericka the Great", cursive;
-  text-shadow: 2px 2px 4px #d1cfcf;
+  font-family: "Libre Baskerville", serif;
 }
 header .navbar a:hover {
-  background-color: #928644;
+  color: #f3b61f;
   transition: 0.9s;
+}
+header .toggle-menu {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 30px;
+  height: 21px;
+  z-index: 1;
+}
+header .toggle-menu .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #d1cfcf;
+  border-radius: 10px;
 }
 
 .box-landing {
@@ -58,8 +74,6 @@ header .navbar a:hover {
   margin-top: 20px;
 }
 .box-about-flex .box-img {
-  /* width: 40%;*/
-  /*flex: 0 0 40%;*/
   flex: 30%;
 }
 .box-about-flex .box-img .box-img-size {
@@ -69,14 +83,12 @@ header .navbar a:hover {
 .box-about-flex .box-text {
   padding: 30px;
   line-height: 1.8;
-  /*flex: 0.8 0 auto;*/
   flex: 50%;
   text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 .grid-container-skills {
   width: 100%;
-  /*border: 2px solid purple;*/
   display: grid;
   grid-template-columns: repeat(3, 20%);
   grid-template-rows: 1fr 1fr;
@@ -117,7 +129,7 @@ header .navbar a:hover {
   width: 100%;
   height: 10vh;
   margin-top: 40px;
-  background-color: #babbb4;
+  background-color: #191923;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -139,7 +151,7 @@ header .navbar a:hover {
 @media screen and (max-width: 991px) {
   .grid-container-skills,
 .grid-container-projects {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48%);
   }
 }
 /* For mobile phones grid and flex-box contact form */
@@ -162,18 +174,30 @@ header .navbar a:hover {
     flex-direction: column;
   }
 }
-/*header container tablet version*/
+/*header container tablet, mobile version*/
 @media screen and (max-width: 991px) {
   header {
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: auto;
+  }
+  header .toggle-menu {
+    display: flex;
   }
   header .navbar {
     flex-direction: column;
     align-items: center;
     align-content: center;
     width: 100%;
+    display: none;
+    overflow: hidden;
+  }
+  header .navbar a {
+    padding: 0.5rem 1rem;
+  }
+  header .navbar.active {
+    display: flex;
   }
 }
 #logo {
@@ -183,30 +207,28 @@ header .navbar a:hover {
 #logo .sign {
   display: inline-block;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.788);
-  border-radius: 30px;
-  font-family: "Fredericka the Great", cursive;
-  color: #9a8f62;
+  font-family: "Libre Baskerville", serif;
+  color: #d1cfcf;
   padding: 0 30px;
   margin-left: 2rem;
   cursor: pointer;
-  box-shadow: inset 0 0 10px rgba(187, 172, 107, 0.849);
 }
-#logo .sign-adds {
-  color: #efce7a;
-  font-family: "Fredericka the Great", cursive;
+#logo .sign-slashes {
+  color: #d1cfcf;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 2px 2px 4px #d1cfcf;
 }
 
 @media screen and (max-width: 991px) {
-  #logo {
+  #logo .sign {
     font-size: 1.5rem;
+    margin-left: 0;
   }
 }
 .box-title {
   width: 50rem;
   padding: 20px;
   background-color: rgba(90, 90, 89, 0.6);
-  box-shadow: inset 5px 5px 10px rgba(187, 172, 107, 0.849), inset 5px 5px 10px #000000, inset 5px 5px 10px #000000, inset -5px -5px 10px rgba(220, 215, 215, 0.918);
 }
 .box-title .title {
   text-align: center;
@@ -228,14 +250,13 @@ header .navbar a:hover {
   color: white;
   font-size: 3em;
   padding: 10px 0;
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 2px 2px 4px #000000;
 }
 .box-title .link {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  /*border:2px solid red;*/
 }
 .box-title .link .btn-link1 {
   width: 10em;
@@ -264,7 +285,7 @@ header .navbar a:hover {
   margin-left: 30px;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
@@ -301,7 +322,6 @@ header .navbar a:hover {
 }
 
 #skills {
-  /*border: 2px solid red;*/
   background-color: rgba(216, 213, 213, 0.24);
 }
 #skills h2 {
@@ -311,7 +331,7 @@ header .navbar a:hover {
   padding: 40px 100px 10px 30px;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
@@ -319,12 +339,15 @@ header .navbar a:hover {
 .item {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
 }
 .item i {
-  /*border: 2px solid green;*/
   font-size: 3em;
   color: #cabe92;
   margin: 20px 0;
+}
+.item .testing {
+  line-height: 2.8;
 }
 .item span {
   font-size: 2em;
@@ -340,7 +363,7 @@ header .navbar a:hover {
   padding: 40px 100px 10px 30px;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
@@ -411,7 +434,6 @@ header .navbar a:hover {
 
 .top-container {
   align-self: flex-start;
-  /*border: 2px solid green;*/
   padding: 10px 20px;
   margin-top: 50px;
 }
@@ -426,7 +448,6 @@ header .navbar a:hover {
   padding: 20px;
 }
 .form__box {
-  /*border:2px solid orange;*/
   flex: 0 1 70%;
 }
 .form__box__button {
@@ -468,14 +489,9 @@ textarea {
   margin: 5px 0;
 }
 
-/*label {
-  border: 2px solid red;
-}
-input {
-  border: 2px solid green;
-}*/
 .end__left {
   margin-left: 20px;
+  color: white;
 }
 
 .end__right img {
