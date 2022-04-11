@@ -63,7 +63,7 @@ header .toggle-menu .bar {
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  background-color: #8a817c;
+  background-color: linear-gradient(#f3b61f, #fbfef9);
 }
 
 .box-about-flex {
@@ -84,7 +84,9 @@ header .toggle-menu .bar {
   padding: 30px;
   line-height: 1.8;
   flex: 50%;
-  text-shadow: 2px 2px 4px #d1cfcf;
+}
+.box-about-flex .box-text p {
+  text-align: justify;
 }
 
 .grid-container-skills {
@@ -238,11 +240,9 @@ header .toggle-menu .bar {
   margin-left: 50px;
 }
 .box-title .title .title-name {
-  color: #CABE92;
   font-weight: 900;
 }
 .box-title .title .title-role {
-  color: #CABE92;
   font-weight: 900;
 }
 .box-title .title p {
@@ -285,18 +285,18 @@ header .toggle-menu .bar {
   font-size: 30px;
   text-transform: uppercase;
   font-family: "Libre Baskerville", serif;
-  text-shadow: 2px 2px 4px #d1cfcf;
   margin-top: 50px;
 }
 
 .text-header {
-  color: rgba(229, 139, 144, 0.8);
+  color: #ef9cb9;
   font-size: 30px;
-  text-shadow: 2px 2px 4px #d1cfcf;
+  font-family: "Libre Baskerville", serif;
 }
 
 .text-subheader {
   font-size: 25px;
+  font-family: "Libre Baskerville", serif;
 }
 
 #profile-img {
@@ -309,11 +309,12 @@ header .toggle-menu .bar {
   width: 10em;
   font-size: 20px;
   font-weight: bold;
+  font-family: "Libre Baskerville", serif;
   color: black;
   text-decoration: none;
   padding: 5px 10px;
-  margin: 40px 30px 0px 30px;
-  background-color: rgba(229, 139, 144, 0.5);
+  margin: 40px 30px 0px 0px;
+  background-color: #ef9cb9;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: inset 0 0 10px #000000;

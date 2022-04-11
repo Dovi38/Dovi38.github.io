@@ -1,3 +1,4 @@
+//header section components
 #logo {
   font-size: 2.5rem;
   font-weight: bold;
@@ -18,8 +19,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 991px) {
   #logo .sign {
     font-size: 1.5rem;
@@ -27,10 +26,12 @@
   }
 }
 
+//title description on landing page
 .box-title {
   width: 50rem;
   padding: 20px;
   background-color: rgba(90, 90, 89, 0.6);
+
 
   .title {
     text-align: center;
@@ -42,12 +43,12 @@
     }
 
     .title-name {
-      color: #CABE92;
+
       font-weight: 900;
     }
 
     .title-role {
-      color: #CABE92;
+
       font-weight: 900;
     }
 
@@ -92,7 +93,7 @@
   }
 }
 
-//second section about me
+//section about me
 #about {
   h2 {
     display: inline-block;
@@ -102,19 +103,19 @@
     font-size: 30px;
     text-transform: uppercase;
     font-family: $font-logo;
-    text-shadow: 2px 2px 4px #d1cfcf;
     margin-top: 50px;
   }
 }
 
 .text-header {
-  color: rgba(229, 139, 144, 0.8);
+  color: #ef9cb9;
   font-size: 30px;
-  text-shadow: 2px 2px 4px #d1cfcf;
+  font-family: $font-logo;
 }
 
 .text-subheader {
   font-size: 25px;
+  font-family: $font-logo;
 }
 
 #profile-img {
@@ -127,11 +128,12 @@
   width: 10em;
   font-size: 20px;
   font-weight: bold;
+  font-family: $font-logo;
   color: black;
   text-decoration: none;
   padding: 5px 10px;
-  margin: 40px 30px 0px 30px;
-  background-color: rgba(229, 139, 144, 0.5);
+  margin: 40px 30px 0px 0px;
+  background-color: #ef9cb9;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: inset 0 0 10px #000000;
