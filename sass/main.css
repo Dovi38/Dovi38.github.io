@@ -54,7 +54,7 @@ header .toggle-menu .bar {
 }
 
 .box-landing {
-  background-image: url(../images/IMG_1775-min.JPG);
+  background-image: url(../images/IMG_1775.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,7 @@ header .toggle-menu .bar {
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  background-color: linear-gradient(#f3b61f, #fbfef9);
+  background-color: rgba(42, 42, 42, 0.6);
 }
 
 .box-about-flex {
