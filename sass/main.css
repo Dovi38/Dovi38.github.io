@@ -63,7 +63,7 @@ header .toggle-menu .bar {
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  background-color: rgba(42, 42, 42, 0.6);
+  background-color: rgba(38, 38, 38, 0.6);
 }
 
 .box-about-flex {
@@ -298,7 +298,7 @@ header .toggle-menu .bar {
 }
 
 .text-lastLine {
-  line-height: 4;
+  line-height: 2.5;
 }
 
 #profile-img {
