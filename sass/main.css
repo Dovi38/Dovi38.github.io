@@ -420,16 +420,16 @@ header .toggle-menu .bar {
   transform: rotateY(180deg);
 }
 #projects .front1 {
-  background: url("../images/beer1.png");
+  background: url("../images/beer-min.png");
 }
 #projects .front2 {
-  background: url("../images/aliens1.png");
+  background: url("../images/aliens-min.png");
 }
 #projects .front3 {
-  background: url("../images/codeMorse.png");
+  background: url("../images/codeMorse-min.png");
 }
 #projects .front4 {
-  background: url("../images/mole.png");
+  background: url("../images/mole-min.png");
 }
 
 .top-container {
